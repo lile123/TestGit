@@ -44,8 +44,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Toast.makeText(MainActivity.this, "开始写入", Toast.LENGTH_LONG).show();
-				writeFile();
-//				promotePower();
+//				writeFile();
+				promotePower();
 			}
 				
 			}
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 			
 			
 			mDataOutputStream = new DataOutputStream(process.getOutputStream());
-			String order = "chmod 777 /dev/ttyGS0"+"\n";
+			String order = "chmod 777 /dev/ttyGS2"+"\n";
 			mDataOutputStream.write(order.getBytes(Charset.forName("utf-8")));
 			mDataOutputStream.writeBytes("exit\n");
 			mDataOutputStream.flush();
