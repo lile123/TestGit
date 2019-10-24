@@ -44,8 +44,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Toast.makeText(MainActivity.this, "开始写入", Toast.LENGTH_LONG).show();
-//				writeFile();
-				promotePower();
+				writeFile();
+//				promotePower();
 			}
 				
 			}
@@ -115,6 +115,9 @@ public class MainActivity extends Activity {
 		}		
 		
 	}
+	/**
+	 * apk的静默安装
+	 */
 	private void writeFile() {
 		try {
 			Process process = Runtime.getRuntime().exec("sh");		
