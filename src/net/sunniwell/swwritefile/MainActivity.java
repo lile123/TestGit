@@ -43,9 +43,12 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
+		
 				Toast.makeText(MainActivity.this, "开始写入", Toast.LENGTH_LONG).show();
 //				writeFile();
 				promotePower();
+				Toast.makeText(MainActivity.this, "新增代码", Toast.LENGTH_LONG).show();
+				
 			}
 				
 			}
